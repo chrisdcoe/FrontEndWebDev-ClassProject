@@ -189,8 +189,6 @@ nav li {
   display: inline-block;
 }
 
-
-
 nav a {
   text-decoration: none;
   text-transform: uppercase;
@@ -207,6 +205,28 @@ nav a:hover {
 .hero-text{
   display: block;
   clear: both;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+footer {
+  background-color: #333333;
+}
+
+footer p {
+  color: #F2F2F2;
+  display: inline-block;
+}
+
+footer p:nth-of-type(2) {
+  text-align: right;
+}
+
+footer a:hover {
+  color: pointer;
+  color: red;
 }
 
 /* ==========================================================================
@@ -382,9 +402,4 @@ input.button:hover {
 
 .red {
   color: #871719;
-}
-
-footer {
-    background-color: #333333;
-    color: #F2F2F2;
 }
