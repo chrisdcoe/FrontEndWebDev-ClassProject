@@ -182,8 +182,6 @@ nav li {
   display: inline-block;
 }
 
-
-
 nav a {
   text-decoration: none;
   text-transform: uppercase;
@@ -200,6 +198,28 @@ nav a:hover {
 .hero-text{
   display: block;
   clear: both;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+footer {
+  background-color: #333333;
+}
+
+footer p {
+  color: white;
+  display: inline-block;
+}
+
+footer p:nth-of-type(2) {
+  text-align: right;
+}
+
+footer a:hover {
+  color: pointer;
+  color: red;
 }
 
 /* ==========================================================================
