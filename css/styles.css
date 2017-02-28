@@ -155,7 +155,7 @@ header {
 }
 
 nav {
-  margin-top: 4em;
+  /*margin-top: 4em;*/
 }
 
 nav::after {
@@ -186,7 +186,9 @@ nav li {
   width: 24.95%;
   max-width: 110px;
   border-bottom: none;
-  display: inline-block;
+  /*display: inline-block;*/
+  display: block;
+  margin: 0 auto;
 }
 
 nav a {
@@ -217,11 +219,8 @@ footer {
 
 footer p {
   color: #F2F2F2;
-  display: inline-block;
-}
-
-footer p:nth-of-type(2) {
-  text-align: right;
+  display: block;
+  text-align: center;
 }
 
 footer a:hover {
@@ -252,7 +251,8 @@ footer a:hover {
 .group { zoom:1; /* For IE 6/7 */ }
 
 .span_1_of_2 {
-  width: 48.2%;
+  /*width: 48.2%;*/
+  width: 100%;
 }
 .span_2_of_2{
   width: 100%;
@@ -336,7 +336,7 @@ input.button:hover {
 }
 
 .nwsltr-input {
-    width: 80%;
+    width: 100%;
     display: block;
     border: 1px solid #c0af8e;
     border-radius: 3px;
@@ -356,9 +356,10 @@ input.button:hover {
     text-transform: uppercase;
     font-weight: 700;
     height: 40px;
-    width: 18%;
+    width: 100%;
     margin: 0 0 10px 0;
     float: right;
+    display: block;
 }
 
 .nwsltr-btn:hover {
@@ -402,4 +403,46 @@ input.button:hover {
 
 .red {
   color: #871719;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+   /*4.) Now add a media query that applies to screens with a minimum width of 994px.*/
+   /*5.) Inside the media query give the .span_1_of_2 class its original width of 49.2%. a) Give the nav element a top margin of 4em; b) Reapply our css for the nav li elements. (width: 24.95%; max-width: 110px; border-bottom: none; display: inline-block;) c) Give .nwsltr-input a width of 70% and float it to the left; d) Give .nwsltr-btn a width of 20% and float it to the right; 6.) Test your site by either shrinking the size of your browser, or using the Device Toolbar in Google Chrome.*/
+
+@media only screen and (min-width: 994px) {
+  .span_1_of_2 {
+    width: 49.2%;
+  }
+
+  nav {
+    margin-top: 4em;
+  }
+
+  nav li {
+    width: 24.95%;
+    max-width: 110px;
+    border-bottom: none;
+    display: inline-block;
+  }
+
+  .nwsltr-input {
+    width: 70%;
+    float: left;
+  }
+
+  .nwsltr-btn {
+    width: 20%;
+    float: right;
+  }
+
+  footer p {
+    display: inline-block;
+    text-align: left;
+  }
+  footer p:nth-of-type(2) {
+    text-align: right;
+  }
 }
